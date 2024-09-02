@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kepha Kibet\\Desktop\\blog\\blog\\blog.csproj",
+      "projectUniqueName": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\blog.csproj",
       "projectName": "blog",
-      "projectPath": "C:\\Users\\Kepha Kibet\\Desktop\\blog\\blog\\blog.csproj",
+      "projectPath": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\blog.csproj",
       "packagesPath": "C:\\Users\\Kepha Kibet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kepha Kibet\\Desktop\\blog\\blog\\obj\\",
+      "outputPath": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kepha Kibet\\AppData\\Roaming\\NuGet\\NuGet.Config",
