@@ -19,5 +19,15 @@ namespace blog.Controllers
         {
             return View();
         }
+		[HttpGet]
+		public IActionResult Edit()
+        {
+            return View(new Post());
+        }
+        [HttpPost]
+        public IActionResult Edit(Post post)
+        {
+            return RedirectToAction("Index");
+         }
     }
 }
