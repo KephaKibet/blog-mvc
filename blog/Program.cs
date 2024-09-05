@@ -1,3 +1,4 @@
+using blog.Data.Repository;
 using Blog.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+builder.Services.AddTransient<IRepository, Repository>();
 
 var app = builder.Build();
 
