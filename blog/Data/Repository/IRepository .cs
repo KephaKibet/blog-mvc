@@ -5,7 +5,7 @@ namespace blog.Data.Repository
 	public interface IRepository
 	{
 		public Post GetPost(int id);
-		List<Post> GetAllPosts(int id);	
+		List<Post> GetAllPosts();	
 		void AddPost(Post post);
 		void UpdatePost(Post post);	
 		void RemovePost(int id);
@@ -13,3 +13,4 @@ namespace blog.Data.Repository
 		Task<bool> SaveChangesAsync();
 	}
 }
+ 
