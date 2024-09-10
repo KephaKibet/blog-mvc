@@ -22,11 +22,11 @@ namespace blog.Controllers
         {
             return View();
         }
-        public IActionResult Header()
+        public IActionResult Remove()
         {
             return View();
         }
-		[HttpGet]
+        [HttpGet]
 		public IActionResult Edit()
         {
             return View(new Post());
