@@ -2,6 +2,7 @@ using blog.Data.Repository;
 using Blog.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = false;
     options.Password.RequireNonAlphanumeric = false;
@@ -21,10 +22,15 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.Password.RequiredLength = 6;
 }
 )
-    .AddRoles<IdentityRole>()
+//////.AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
-builder.Services.AddTransient<IRepository, Repository>();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Auth/Login";
+});
+
+builder.Services.AddTransient<IRepository, Repository>();
 
 var app = builder.Build();
 

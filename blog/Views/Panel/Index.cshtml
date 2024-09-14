@@ -1,23 +1,23 @@
-﻿@model IEnumerable<Post>      
+﻿@model IEnumerable<Post>
 
 @{
- 
+
 }
 
 <h2>Admin Panel</h2>
 
 <div>
 	<ul>
-		@foreach(var post in Model)
+		@foreach (var post in Model)
 		{
 			<li>
-					@post.Tittle
-					-
+				@post.Tittle
+				-
 				<a asp-controller="Panel" asp-action="Edit" asp-route-id="@post.Id">
 					Edit
 				</a>
 				-
-				<a asp-controller="Panel" asp-action="Remove" asp-route-id="@post.Id">
+				<a asp-controller="Panel" asp-action="Remove" asp-route-id="@post.Id" >
 					Remove
 				</a>
 			</li>

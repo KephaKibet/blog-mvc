@@ -24,8 +24,9 @@ namespace blog.Controllers
         {
             var result = await _signInManager.PasswordSignInAsync(vm.UserName, vm.Password, false, false);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Panel");
         }
+
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
