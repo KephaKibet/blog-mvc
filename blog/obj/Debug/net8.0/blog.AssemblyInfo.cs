@@ -15,15 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fedb85a9699b0ca090f8269eaf272b2730a7a555")]
-=======
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15a648ced2124010ac23f1587519b5ecb2b8e39b")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5515cd9ed517f5a80673b0c69e1f9eb80e66a7b7")]
->>>>>>> Stashed changes
->>>>>>> authentication
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6e71f1ade9e23ece2b3c7844c8e65a60ca68bf6")]
 [assembly: System.Reflection.AssemblyProductAttribute("blog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
@@ -31,32 +31,32 @@ var app = builder.Build();
 try
 {
 
-var scope = app.Services.CreateScope();
+    var scope = app.Services.CreateScope();
 
-var ctx = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
-var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var ctx = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-ctx.Database.EnsureCreated();
+    ctx.Database.EnsureCreated();
 
-var adminRole = new IdentityRole("admin");
-if (!ctx.Roles.Any())
-{
-    //create a role 
-    roleManager.CreateAsync(adminRole).GetAwaiter().GetResult();
-}
-
-
-if(!ctx.Users.Any(u => u.UserName == "admin"))
-{
-    //create an admin
-    var adminUser = new IdentityUser
+    var adminRole = new IdentityRole("admin");
+    if (!ctx.Roles.Any())
     {
-        UserName = "admin",
-        Email = "admin@test.com"
-    };
-	var result = userManager.CreateAsync(adminUser,"password").GetAwaiter().GetResult();
-}
+        //create a role 
+        roleManager.CreateAsync(adminRole).GetAwaiter().GetResult();
+    }
+
+
+    if (!ctx.Users.Any(u => u.UserName == "admin"))
+    {
+        //create an admin
+        var adminUser = new IdentityUser
+        {
+            UserName = "admin",
+            Email = "admin@test.com"
+        };
+        var result = userManager.CreateAsync(adminUser, "password").GetAwaiter().GetResult();
+    }
 
 }
 catch (Exception e)
