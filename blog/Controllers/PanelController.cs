@@ -19,6 +19,22 @@ namespace blog.Controllers
             var posts = _repo.GetAllPosts();
             return View(posts);
         }
+
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return View(new Post());
+            }
+
+            else
+            {
+                var post = _repo.GetPost((int)id);
+                return View(post);
+            }
+
+        }
        
         [HttpPost]
         public async Task<IActionResult> Edit(Post post)
@@ -37,23 +53,8 @@ namespace blog.Controllers
                 return View(post);
         }
 
-        [HttpGet]
-        public IActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return View(new Post());
-            }
-
-            else
-            {
-                var post = _repo.GetPost((int)id);
-                return View(post);
-            }
-
-        }
-
-        public async Task<IActionResult> Remove(int id)
+		[HttpGet]
+		public async Task<IActionResult> Remove(int id)
         {
             _repo.RemovePost(id);
             await _repo.SaveChangesAsync();

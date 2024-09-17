@@ -1,8 +1,8 @@
 using blog.Data.Repository;
 using Blog.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,15 +22,17 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.Password.RequiredLength = 6;
 }
 )
-//////.AddRoles<IdentityRole>()
+    //.AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
+
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = "/Auth/Login";
+	options.LoginPath = "/Auth/Login";
 });
 
 builder.Services.AddTransient<IRepository, Repository>();
+
 
 var app = builder.Build();
 
@@ -45,7 +47,8 @@ try
 
     ctx.Database.EnsureCreated();
 
-    var adminRole = new IdentityRole("admin");
+    var adminRole = new IdentityRole("Admin");
+
     if (!ctx.Roles.Any())
     {
         //create a role 
@@ -62,7 +65,10 @@ try
             Email = "admin@test.com"
         };
         var result = userManager.CreateAsync(adminUser, "password").GetAwaiter().GetResult();
-    }
+        
+        //add role to user
+		userManager.AddToRoleAsync(adminUser, adminRole.Name).GetAwaiter().GetResult();
+	}
 
 }
 catch (Exception e)
@@ -87,6 +93,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",

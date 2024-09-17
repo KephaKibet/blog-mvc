@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - blog</title>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
 
     <div>
         <a asp-controller="Home" asp-action="Index">Home  </a>
-        <a asp-controller="Home" asp-action="Edit">Create Post  </a>
+        <a asp-controller="Panel" asp-action="Edit">Create Post  </a>
         <a asp-controller="Panel" asp-action="Index">Admin Panel  </a>
 
         @if (User.Identity.IsAuthenticated)
