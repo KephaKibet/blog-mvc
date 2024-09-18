@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="wwwroot\content\blog\" />
+    <Folder Include="wwwroot\content\static\" />
   </ItemGroup>
 
   <ItemGroup>

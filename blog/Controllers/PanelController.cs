@@ -1,18 +1,26 @@
-﻿using blog.Data.Repository;
+﻿using blog.Data.FileManager;
+using blog.Data.Repository;
 using blog.Models;
+using blog.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace blog.Controllers
 {
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "admin")]
     public class PanelController : Controller
     {
         private IRepository _repo;
-        public PanelController( IRepository repo)
+        private IFileManager _fileManager;
+		public PanelController(
+            IRepository repo,
+            IFileManager fileManager
+            )
         {
             _repo = repo;
-        }
+            _fileManager = fileManager;
+
+		}
 
         public IActionResult Index()
         {
@@ -25,21 +33,36 @@ namespace blog.Controllers
         {
             if (id == null)
             {
-                return View(new Post());
+                return View(new PostViewModel());
             }
 
             else
             {
                 var post = _repo.GetPost((int)id);
-                return View(post);
+                return View(new PostViewModel
+                {
+                    Id = post.Id,
+                    Tittle = post.Tittle,
+                    Body = post.Tittle,
+
+                });
             }
 
         }
        
         [HttpPost]
-        public async Task<IActionResult> Edit(Post post)
+        public async Task<IActionResult> Edit(PostViewModel vm)
         {
-            if (post.Id > 0)
+            var post = new Post
+            {
+                Id = vm.Id,
+                Tittle = vm.Tittle,
+                Body = vm.Tittle,
+                Image = await _fileManager.SaveImage(vm.Image)
+            };
+
+
+			if (post.Id > 0)
                 _repo.UpdatePost(post);
             else
                 _repo.AddPost(post);
@@ -47,7 +70,7 @@ namespace blog.Controllers
 
             if (await _repo.SaveChangesAsync())
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Panel");
             }
             else
                 return View(post);

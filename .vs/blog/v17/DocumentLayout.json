@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\views\\panel\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\views\\panel\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|c:\\users\\kepha kibet\\desktop\\blog-mvc\\blog\\viewmodels\\postviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03B98E20-0BD9-449F-9495-6885C2452C53}|blog\\blog.csproj|solutionrelative:blog\\viewmodels\\postviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,112 +22,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Panel\\Edit.cshtml",
               "RelativeDocumentMoniker": "blog\\Views\\Panel\\Edit.cshtml",
               "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Panel\\Edit.cshtml",
               "RelativeToolTip": "blog\\Views\\Panel\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T14:18:07.258Z",
+              "WhenOpened": "2024-09-18T18:09:41.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PanelController.cs",
               "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\PanelController.cs",
               "RelativeDocumentMoniker": "blog\\Controllers\\PanelController.cs",
               "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\PanelController.cs",
               "RelativeToolTip": "blog\\Controllers\\PanelController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T13:53:59.618Z",
+              "WhenOpened": "2024-09-18T17:00:42.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "blog\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "blog\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PostViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\ViewModels\\PostViewModel.cs",
+              "RelativeDocumentMoniker": "blog\\ViewModels\\PostViewModel.cs",
+              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\ViewModels\\PostViewModel.cs",
+              "RelativeToolTip": "blog\\ViewModels\\PostViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T14:19:20.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "blog\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "blog\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T14:12:55.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "blog\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "blog\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T13:59:35.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Program.cs",
-              "RelativeDocumentMoniker": "blog\\Program.cs",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Program.cs",
-              "RelativeToolTip": "blog\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAF4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T09:44:38.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "blog\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "blog\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T13:05:54.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "blog\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "blog\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T10:21:09.705Z",
+              "WhenOpened": "2024-09-18T16:57:29.421Z",
               "EditorCaption": ""
             }
           ]
