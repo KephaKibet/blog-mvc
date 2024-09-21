@@ -1,3 +1,4 @@
+using blog.Data.FileManager;
 using blog.Data.Repository;
 using Blog.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,6 +33,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddTransient<IRepository, Repository>();
+builder.Services.AddTransient<IFileManager, FileManager>();
 
 
 var app = builder.Build();
