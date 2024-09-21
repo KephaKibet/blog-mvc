@@ -5,8 +5,36 @@
       "PackagePath": "staticwebassets\\blog.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\blog\\img_Sat-09-2024-07-25-01.avif",
+      "PackagePath": "staticwebassets\\content\\blog\\img_Sat-09-2024-07-25-01.avif"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\blog\\img_Sat-09-2024-07-28-50.webp",
+      "PackagePath": "staticwebassets\\content\\blog\\img_Sat-09-2024-07-28-50.webp"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\blog\\img_Sat-09-2024-09-16-22.webp",
+      "PackagePath": "staticwebassets\\content\\blog\\img_Sat-09-2024-09-16-22.webp"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\blog\\img_Sat-09-2024-09-19-48.avif",
+      "PackagePath": "staticwebassets\\content\\blog\\img_Sat-09-2024-09-19-48.avif"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\static\\debby-hudson-oVQBn0X2oEk-unsplash.jpg",
+      "PackagePath": "staticwebassets\\content\\static\\debby-hudson-oVQBn0X2oEk-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\static\\letters-1834501_640.jpg",
+      "PackagePath": "staticwebassets\\content\\static\\letters-1834501_640.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\static\\nastia-petruk-H0rr17rYVEI-unsplash.jpg",
       "PackagePath": "staticwebassets\\content\\static\\nastia-petruk-H0rr17rYVEI-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kepha Kibet\\Desktop\\blog-mvc\\blog\\wwwroot\\content\\static\\patrick-fore-0gkw_9fy0eQ-unsplash.jpg",
+      "PackagePath": "staticwebassets\\content\\static\\patrick-fore-0gkw_9fy0eQ-unsplash.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.blog.Microsoft.AspNetCore.StaticWebAssets.props",
