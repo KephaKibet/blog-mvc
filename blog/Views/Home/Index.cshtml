@@ -4,10 +4,14 @@
  
 }
 
-<h2>Home Page</h2>
- <img src="~/content/static/nastia-petruk-h0rr17ryvei-unsplash.jpg" width="500px"/> 
-<div>
-	<ul>
+@* <h2>Home Page</h2> *@
+ @* <img src="~/content/static/nastia-petruk-h0rr17ryvei-unsplash.jpg" width="500px"/>  *@
+
+<div class="main-img">
+	<span class="title">Amazing Blog Site</span>
+ </div>
+<div class="container">
+	@* <ul>
 		@foreach(var post in Model)
 		{
 			<li>
@@ -16,5 +20,17 @@
 				</a>
 			</li>
 		}
-	</ul>
+	</ul> *@
+
+	@foreach (var post in Model)
+	{
+		var image_path = $"/Image/{post.Image}";
+			<a class="post" asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+			<img src="@image_path"/>
+			<span class="title" >
+			@post.Tittle
+			</span>
+			</a>
+	}
+
 </div>

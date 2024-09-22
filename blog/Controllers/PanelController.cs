@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace blog.Controllers
 {
-        //[Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
     public class PanelController : Controller
     {
         private IRepository _repo;
@@ -43,7 +43,7 @@ namespace blog.Controllers
                 {
                     Id = post.Id,
                     Tittle = post.Tittle,
-                    Body = post.Tittle,
+                    Body = post.Body,
 
                 });
             }
@@ -57,7 +57,7 @@ namespace blog.Controllers
             {
                 Id = vm.Id,
                 Tittle = vm.Tittle,
-                Body = vm.Tittle,
+                Body = vm.Body,
                 Image = await _fileManager.SaveImage(vm.Image)
             };
 
