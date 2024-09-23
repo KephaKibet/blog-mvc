@@ -10,6 +10,7 @@
     <Folder Include="Model\" />
     <Folder Include="wwwroot\content\blog\" />
     <Folder Include="wwwroot\content\static\" />
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
   <ItemGroup>

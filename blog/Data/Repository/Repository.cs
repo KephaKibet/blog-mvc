@@ -22,6 +22,14 @@ namespace blog.Data.Repository
 		{
 			return _ctx.Posts.ToList();
 		}
+		List<Post> IRepository.GetAllPosts(string category)
+		{
+			//Func<Post, bool> InCategory = (post) => { return post.Category.ToLower().Equals(category.ToLower()); }; //functional alternative
+
+			return _ctx.Posts
+				.Where(post => post.Category.ToLower().Equals(category.ToLower()))
+				.ToList();
+		}
 		public Post GetPost(int id)
 		{
 			return _ctx.Posts.FirstOrDefault(post => post.Id == id);
@@ -45,5 +53,7 @@ namespace blog.Data.Repository
 			}
 			return false;
 		}
+
+		
 	}
 }

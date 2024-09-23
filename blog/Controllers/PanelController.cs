@@ -1,4 +1,5 @@
-﻿using blog.Data.FileManager;
+﻿using System.Runtime.Intrinsics.X86;
+using blog.Data.FileManager;
 using blog.Data.Repository;
 using blog.Models;
 using blog.ViewModels;
@@ -44,6 +45,10 @@ namespace blog.Controllers
                     Id = post.Id,
                     Tittle = post.Tittle,
                     Body = post.Body,
+                    CurrentImage = post.Image,
+                    Description = post.Description,
+                    Category = post.Category,
+                    Tags = post.Tags,
 
                 });
             }
@@ -58,9 +63,16 @@ namespace blog.Controllers
                 Id = vm.Id,
                 Tittle = vm.Tittle,
                 Body = vm.Body,
-                Image = await _fileManager.SaveImage(vm.Image)
+				Description = vm.Description,
+				Category = vm.Category,
+				Tags = vm.Tags,
             };
 
+            if (vm.Image == null)
+                post.Image = vm.CurrentImage;
+
+            else
+				post.Image = await _fileManager.SaveImage(vm.Image);
 
 			if (post.Id > 0)
                 _repo.UpdatePost(post);
