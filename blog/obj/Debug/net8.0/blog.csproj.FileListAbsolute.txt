@@ -28,7 +28,6 @@ C:\Users\Kepha Kibet\Desktop\blog\blog\obj\Debug\net8.0\refint\blog.dll
 C:\Users\Kepha Kibet\Desktop\blog\blog\obj\Debug\net8.0\blog.pdb
 C:\Users\Kepha Kibet\Desktop\blog\blog\obj\Debug\net8.0\blog.genruntimeconfig.cache
 C:\Users\Kepha Kibet\Desktop\blog\blog\obj\Debug\net8.0\ref\blog.dll
-C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\appsettings.json
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\blog.staticwebassets.runtime.json
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\blog.exe
@@ -178,3 +177,5 @@ C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\Microsoft.Extensions
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\appsettings.production.Development.json
+C:\Users\Kepha Kibet\Desktop\blog-mvc\blog\bin\Debug\net8.0\appsettings.production.json
